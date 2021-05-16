@@ -9,19 +9,20 @@
   </head>
 
   <body>
-    <nav class="navbar fixed-top navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
       <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-            <img class="bi me-2" src="/img/LANDrop.svg" width="40" height="40">
-          </a>
-
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 link-dark">Home</a></li>
-            <li><a href="#features" class="nav-link px-2 link-dark">Features</a></li>
-            <li><a href="#downloads" class="nav-link px-2 link-dark">Downloads</a></li>
-            <li><a href="#privacy" class="nav-link px-2 link-dark">Privacy Policy</a></li>
-            <li><a href="https://github.com/LANDrop" target="_blank" class="nav-link px-2 link-dark">GitHub</a></li>
+        <a class="navbar-brand" href="#top">LANDrop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarItems">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#downloads">Downloads</a></li>
+            <li class="nav-item"><a class="nav-link" href="#privacy">Privacy Policy</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://github.com/LANDrop" target="_blank">GitHub</a></li>
           </ul>
         </div>
       </div>
@@ -92,7 +93,7 @@
       <h2 class="pb-2 border-bottom">Downloads</h2>
 
       <div class="container text-center pt-4 pb-5">
-        <div class="btn-group" role="group">
+        <div class="btn-group" role="group" style="flex-wrap: wrap;">
           <a href="" class="btn btn-outline-primary disabled">iOS (WIP)</a>
           <a href="" class="btn btn-outline-primary disabled">Android (WIP)</a>
           <a href="https://github.com/LANDrop/LANDrop/releases/download/v0.2.0-beta2/LANDrop-0.2.0-beta2-macos.zip" class="btn btn-outline-primary">macOS</a>
@@ -115,10 +116,17 @@
 
     <footer class="footer mt-auto py-3 bg-light">
       <div class="container">
-        <span class="text-muted">Copyright © 2021, LANDrop. All rights reserved.</span>
+        <span class="text-muted">Copyright © 2021, LANDrop<br>All rights reserved.</span>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+    <script>
+      $('.navbar-collapse a').click(() => {
+        $(".navbar-collapse").collapse('hide');
+      });
+    </script>
   </body>
 </html>
