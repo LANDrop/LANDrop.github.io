@@ -6,6 +6,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="icon" href="/img/LANDrop.svg">
+    <style>
+      .table-download {
+        margin: 0px auto;
+      }
+
+      .row-download {
+        cursor: pointer;
+      }
+    </style>
     <title>LANDrop - Drop any files to any devices on your LAN</title>
   </head>
 
@@ -94,13 +103,36 @@
       <h2 class="pb-2 border-bottom">Downloads</h2>
 
       <div class="container text-center pt-4 pb-5">
-        <div class="btn-group" role="group" style="flex-wrap: wrap;">
-          <a href="https://apps.apple.com/us/app/landrop/id1568444438" class="btn btn-outline-primary">iOS</a>
-          <a href="https://github.com/LANDrop/LANDrop-android-release/raw/master/LANDrop-flutter-0.1.3.1-android.apk" class="btn btn-outline-primary">Android</a>
-          <a href="https://github.com/LANDrop/LANDrop/releases/download/v0.3.0-beta2/LANDrop-0.3.0-beta2-macos.dmg" class="btn btn-outline-primary">macOS</a>
-          <a href="https://github.com/LANDrop/LANDrop/releases/download/v0.3.0-beta2/LANDrop-0.3.0-beta2-win.zip" class="btn btn-outline-primary">Windows</a>
-          <a href="https://github.com/LANDrop/LANDrop/releases/download/v0.3.0-beta2/LANDrop-0.3.0-beta2-linux.AppImage" class="btn btn-outline-primary">Linux</a>
-        </div>
+        <table class="table table-bordered table-striped table-hover w-auto table-download">
+          <thead>
+            <tr>
+              <th scope="col">Platform</th>
+              <th scope="col">Version</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row-download" data-download-link="https://apps.apple.com/us/app/landrop/id1568444438">
+              <td>iOS</td>
+              <td>0.1.1</td>
+            </tr>
+            <tr class="row-download" data-download-link="https://github.com/LANDrop/LANDrop-android-release/raw/master/LANDrop-flutter-0.1.3.1-android.apk">
+              <td>Android</td>
+              <td>0.1.3</td>
+            </tr>
+            <tr class="row-download" data-download-link="https://github.com/LANDrop/LANDrop/releases/download/v0.3.0-beta2/LANDrop-0.3.0-beta2-macos.dmg">
+              <td>macOS</td>
+              <td>0.3.0-beta2</td>
+            </tr>
+            <tr class="row-download" data-download-link="https://github.com/LANDrop/LANDrop/releases/download/v0.3.0-beta2/LANDrop-0.3.0-beta2-win.zip">
+              <td>Windows</td>
+              <td>0.3.0-beta2</td>
+            </tr>
+            <tr class="row-download" data-download-link="https://github.com/LANDrop/LANDrop/releases/download/v0.3.0-beta2/LANDrop-0.3.0-beta2-linux.AppImage">
+              <td>Linux</td>
+              <td>0.3.0-beta2</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
@@ -125,9 +157,13 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 
     <script>
-      $('.navbar-collapse a').click(() => {
-        $(".navbar-collapse").collapse('hide');
-      });
+        $('.navbar-collapse a').click(function() {
+          $('.navbar-collapse').collapse('hide');
+        });
+
+        $('.row-download').click(function() {
+          window.document.location = $(this).data('download-link');
+        });
     </script>
   </body>
 </html>
