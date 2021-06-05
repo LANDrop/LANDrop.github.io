@@ -113,23 +113,23 @@
           <tbody>
             <tr class="row-download" data-download-link="https://apps.apple.com/us/app/landrop/id1568444438">
               <td>iOS</td>
-              <td>0.1.1</td>
+              <td id="version-ios">Loading...</td>
             </tr>
-            <tr class="row-download" data-download-link="https://github.com/LANDrop/LANDrop-android-release/raw/master/LANDrop-flutter-0.1.4.1-android.apk">
+            <tr class="row-download" data-download-link="https://releases.landrop.app/LANDrop-flutter-latest-android.apk">
               <td>Android</td>
-              <td>0.1.4</td>
+              <td id="version-android">Loading...</td>
             </tr>
-            <tr class="row-download" data-download-link="https://github.com/LANDrop/LANDrop/releases/download/v0.3.0-beta2/LANDrop-0.3.0-beta2-macos.dmg">
+            <tr class="row-download" data-download-link="https://releases.landrop.app/LANDrop-latest-macos.dmg">
               <td>macOS</td>
-              <td>0.3.0-beta2</td>
+              <td id="version-macos">Loading...</td>
             </tr>
-            <tr class="row-download" data-download-link="https://github.com/LANDrop/LANDrop/releases/download/v0.3.0-beta2/LANDrop-0.3.0-beta2-win.zip">
+            <tr class="row-download" data-download-link="https://releases.landrop.app/LANDrop-latest-win.zip">
               <td>Windows</td>
-              <td>0.3.0-beta2</td>
+              <td id="version-win">Loading...</td>
             </tr>
-            <tr class="row-download" data-download-link="https://github.com/LANDrop/LANDrop/releases/download/v0.3.0-beta2/LANDrop-0.3.0-beta2-linux.AppImage">
+            <tr class="row-download" data-download-link="https://releases.landrop.app/LANDrop-latest-linux.AppImage">
               <td>Linux</td>
-              <td>0.3.0-beta2</td>
+              <td id="version-linux">Loading...</td>
             </tr>
           </tbody>
         </table>
@@ -163,6 +163,14 @@
 
         $('.row-download').click(function() {
           window.document.location = $(this).data('download-link');
+        });
+
+        $.getJSON('https://releases.landrop.app/versions.json', function(data) {
+          $('#version-ios').text(data['ios']);
+          $('#version-android').text(data['android']);
+          $('#version-macos').text(data['desktop']);
+          $('#version-win').text(data['desktop']);
+          $('#version-linux').text(data['desktop']);
         });
     </script>
   </body>
