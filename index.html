@@ -33,7 +33,6 @@
             <li class="nav-item"><a class="nav-link" href="#downloads">Downloads</a></li>
             <li class="nav-item"><a class="nav-link" href="#privacy">Privacy Policy</a></li>
             <li class="nav-item"><a class="nav-link" href="#link-exchange">Link Exchange</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://github.com/LANDrop" target="_blank">GitHub</a></li>
           </ul>
         </div>
       </div>
@@ -45,8 +44,12 @@
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">Drop any files to any devices on your LAN.<br>No need to use instant messaging for that anymore.</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <a href="#downloads" class="btn btn-primary btn-lg px-4 gap-3">Try it now</button>
-          <a href="https://github.com/LANDrop" target="_blank" class="btn btn-outline-secondary btn-lg px-4">Source code</a>
+          <a href="https://apps.apple.com/us/app/landrop/id1568444438" class="px-1"><img src="img/app-store-badge.svg" height="50"></a>
+          <a href="https://play.google.com/store/apps/details?id=app.landrop.landrop_flutter" class="px-1"><img src="img/google-play-badge.svg" height="50"></a>
+          <a href="#downloads" class="btn btn-primary btn-lg px-4">All Downloads</a>
+        </div>
+        <div class="col-lg-6 mx-auto mt-1">
+          <a class="text-muted" href="https://releases.landrop.app/LANDrop-flutter-latest-android.apk">Download Android APK</a>
         </div>
       </div>
     </div>
@@ -116,9 +119,13 @@
               <td>iOS</td>
               <td id="version-ios">Loading...</td>
             </tr>
-            <tr class="row-download" data-download-link="https://releases.landrop.app/LANDrop-flutter-latest-android.apk">
-              <td>Android</td>
+            <tr class="row-download" data-download-link="https://play.google.com/store/apps/details?id=app.landrop.landrop_flutter">
+              <td>Android Play Store</td>
               <td id="version-android">Loading...</td>
+            </tr>
+            <tr class="row-download" data-download-link="https://releases.landrop.app/LANDrop-flutter-latest-android.apk">
+              <td>Android APK</td>
+              <td id="version-android-apk">Loading...</td>
             </tr>
             <tr class="row-download" data-download-link="https://releases.landrop.app/LANDrop-latest-macos.dmg">
               <td>macOS</td>
@@ -142,8 +149,8 @@
 
       <div class="container pt-4 pb-5">
         <p class="text-muted">Thanks for using LANDrop!</p>
-        <p class="text-muted">LANDrop Organization doesn’t collect, share, or store any of your personal data. All personal data required for the normal operation of the app are stored entirely and exclusively on your device.</p>
-        <p class="text-muted">When you send or receive files to or from other devices, your device’s name, type, and/or local IP address may be shared with the other party. You can choose not to actively share this information by turning off “Discoverable” in the app. This information is not collected, shared, or stored by LANDrop Organization in any way and is only used for the necessary operation of the app.</p>
+        <p class="text-muted">SkyArc LLC doesn’t collect, share, or store any of your personal data. All personal data required for the normal operation of the app are stored entirely and exclusively on your device.</p>
+        <p class="text-muted">When you send or receive files to or from other devices, your device’s name, type, and/or local IP address may be shared with the other party. You can choose not to actively share this information by turning off “Discoverable” in the app. This information is not collected, shared, or stored by SkyArc LLC in any way and is only used for the necessary operation of the app.</p>
         <p class="text-muted">If you have any questions regarding this privacy policy, please send an email to privacy@landrop.app.</p>
       </div>
     </div>
@@ -163,7 +170,7 @@
 
     <footer class="footer mt-auto py-3 bg-light">
       <div class="container">
-        <span class="text-muted">Copyright © 2021, LANDrop<br>All rights reserved.</span>
+        <span class="text-muted">Copyright © 2021-2024, SkyArc LLC<br>All rights reserved.</span>
       </div>
     </footer>
 
@@ -182,6 +189,7 @@
         $.getJSON('https://releases.landrop.app/versions.json', function(data) {
           $('#version-ios').text(data['ios']);
           $('#version-android').text(data['android']);
+          $('#version-android-apk').text(data['android']);
           $('#version-macos').text(data['desktop']);
           $('#version-win').text(data['desktop']);
           $('#version-linux').text(data['desktop']);
