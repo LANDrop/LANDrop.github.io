@@ -128,12 +128,12 @@
               <td id="version-android-apk">Loading...</td>
             </tr>
             <tr class="row-download" data-download-link="https://releases.landrop.app/LANDrop-latest-macos.dmg">
-              <td>macOS >= 14.0 (Apple Silicon)</td>
+              <td>macOS >= 14 (Apple Silicon)</td>
               <td id="version-macos">Loading...</td>
             </tr>
-            <tr class="row-download" data-download-link="#downloads">
-              <td>macOS (Intel)</td>
-              <td id="version-macos-intel">Coming Soon...</td>
+            <tr class="row-download" data-download-link="https://releases.landrop.app/LANDrop-latest-macos-intel.dmg">
+              <td>macOS >= 11 (Intel/Rosetta)</td>
+              <td id="version-macos-intel">Loading...</td>
             </tr>
             <tr class="row-download" data-download-link="https://releases.landrop.app/LANDrop-latest-win.zip">
               <td>Windows</td>
@@ -195,6 +195,7 @@
           $('#version-android').text(data['android']);
           $('#version-android-apk').text(data['android']);
           $('#version-macos').text(data['desktop']);
+          $('#version-macos-intel').text(data['desktop']);
           $('#version-win').text(data['desktop']);
           $('#version-linux').text(data['desktop']);
         });
