@@ -81,7 +81,7 @@
           <p class="lead">Drop any files to any devices on your LAN.</p>
           <div class="d-flex gap-2 justify-content-md-start justify-content-center">
             <a href="https://apps.apple.com/us/app/landrop/id1568444438" target="_blank"><img src="/assets/img/app-store-badge.svg" height="50"></a>
-            <a href="https://play.google.com/store/apps/details?id=app.landrop.landrop_flutter" class="ms-md-2" target="_blank"><img src="/assets/img/google-play-badge.svg" height="50"></a>
+            <a href="https://play.google.com/store/apps/details?id=app.landrop.landrop_flutter" class="ms-md-2" target="_blank" id="gplay"><img src="/assets/img/google-play-badge.svg" height="50"></a>
           </div>
           <div class="d-flex gap-2 justify-content-md-start justify-content-center pt-3">
             <a href="https://www.buymeacoffee.com/LANDrop" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-blue.png" height="32"></a>
@@ -152,7 +152,7 @@
               <h5 class="card-title">Mobile & Android TV</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary" id="version-mobile"></h6>
               <a href="https://apps.apple.com/us/app/landrop/id1568444438" target="_blank"><img src="/assets/img/app-store-badge.svg" height="40"></a>
-              <a href="https://play.google.com/store/apps/details?id=app.landrop.landrop_flutter" class="ms-md-2" target="_blank"><img src="/assets/img/google-play-badge.svg" height="40"></a><br>
+              <a href="https://play.google.com/store/apps/details?id=app.landrop.landrop_flutter" class="ms-md-2" target="_blank" id="gplay2"><img src="/assets/img/google-play-badge.svg" height="40"></a><br>
               <a href="https://releases.landrop.app/LANDrop-flutter-latest-android.apk" class="text-muted" target="_blank">Download Android APK (TV Supported)</a>
             </div>
           </div>
@@ -252,6 +252,10 @@
         $('#version-win').text(data['desktop']);
         $('#version-linux').text(data['desktop']);
       });
+      if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+        $('#gplay').remove();
+        $('#gplay2').remove();
+      }
   </script>
   </body>
 </html>
