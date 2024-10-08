@@ -160,22 +160,22 @@
             <div class="card-body">
               <h5 class="card-title">macOS</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary" id="version-macos"></h6>
-              <a href="https://releases.landrop.app/landrop-v2-electron/LANDrop-2.6.0-macos-universal.dmg" class="btn btn-outline-primary" target="_blank">macOS (>= 10.15)</a>
+              <a id="download-link-macos" href="#" class="btn btn-outline-primary" target="_blank">macOS (>= 10.15)</a>
             </div>
           </div>
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Windows</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary" id="version-win"></h6>
-              <a href="https://releases.landrop.app/landrop-v2-electron/LANDrop-2.6.0-win-x64-setup.exe" class="btn btn-outline-primary" target="_blank">Windows >= 10</a><br>
-              <a href="https://releases.landrop.app/landrop-v2-qt/LANDrop-latest-win.zip" class="text-muted" target="_blank">Windows >= 7</a>
+              <a id="download-link-win" href="#" class="btn btn-outline-primary" target="_blank">Windows >= 10</a><br>
+              <a href="https://releases.landrop.app/landrop-v2-qt/LANDrop-latest-win.zip" class="text-muted" target="_blank">Windows &lt; 10</a>
             </div>
           </div>
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Linux</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary" id="version-linux"></h6>
-              <a href="https://releases.landrop.app/landrop-v2-electron/LANDrop-2.6.0-linux-x86_64.AppImage" class="btn btn-outline-primary" target="_blank">AppImage</a>
+              <a id="download-link-linux" href="#" class="btn btn-outline-primary" target="_blank">AppImage</a>
             </div>
           </div>
         </div>
@@ -251,6 +251,9 @@
         $('#version-macos').text(data['desktop']);
         $('#version-win').text(data['desktop']);
         $('#version-linux').text(data['desktop']);
+        $('#download-link-macos').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-macos-universal.dmg`);
+        $('#download-link-win').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-win-x64-setup.exe`);
+        $('#download-link-linux').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-linux-x86_64.AppImage`);
       });
   </script>
   </body>
