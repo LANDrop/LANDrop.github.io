@@ -168,15 +168,17 @@
               <h5 class="card-title">Windows</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary" id="version-win"></h6>
               <a id="download-link-win" href="#" class="btn btn-outline-primary" target="_blank">Windows >= 10</a><br>
-              <a href="https://releases.landrop.app/landrop-v2-qt/LANDrop-latest-win.zip" class="text-muted" target="_blank">Windows &lt; 10</a>
+              <a href="https://releases.landrop.app/landrop-v2-qt/LANDrop-latest-win.zip" class="text-muted" target="_blank">Windows &lt; 10 (2.4.0)</a>
             </div>
           </div>
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Linux</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary" id="version-linux"></h6>
-              <a id="download-link-linux-x86_64" href="#" class="btn btn-outline-primary" target="_blank">AppImage (x86_64)</a>
-              <a id="download-link-linux-aarch64" href="#" class="btn btn-outline-primary" target="_blank">AppImage (aarch64)</a>
+              <a id="download-link-linux-x86_64-appimage" href="#" class="btn btn-outline-primary" target="_blank">AppImage (x86_64)</a>
+              <a id="download-link-linux-aarch64-appimage" href="#" class="btn btn-outline-primary" target="_blank">AppImage (aarch64)</a><br>
+              <a id="download-link-linux-x86_64-deb" href="#" class="btn btn-outline-primary" target="_blank">DEB (x86_64)</a>
+              <a id="download-link-linux-aarch64-deb" href="#" class="btn btn-outline-primary" target="_blank">DEB (aarch64)</a>
             </div>
           </div>
         </div>
@@ -254,8 +256,10 @@
         $('#version-linux').text(data['desktop']);
         $('#download-link-macos').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-macos-universal.dmg`);
         $('#download-link-win').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-win-x64-setup.exe`);
-        $('#download-link-linux-x86_64').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-linux-x86_64.AppImage`);
-        $('#download-link-linux-aarch64').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-linux-arm64.AppImage`);
+        $('#download-link-linux-x86_64-appimage').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-linux-x86_64.AppImage`);
+        $('#download-link-linux-aarch64-appimage').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-linux-arm64.AppImage`);
+        $('#download-link-linux-x86_64-deb').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-linux-amd64.deb`);
+        $('#download-link-linux-aarch64-deb').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-linux-arm64.deb`);
       });
   </script>
   </body>
