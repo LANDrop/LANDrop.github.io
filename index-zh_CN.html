@@ -175,7 +175,8 @@
             <div class="card-body">
               <h5 class="card-title">Linux</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary" id="version-linux"></h6>
-              <a id="download-link-linux" href="#" class="btn btn-outline-primary" target="_blank">AppImage</a>
+              <a id="download-link-linux-x86_64" href="#" class="btn btn-outline-primary" target="_blank">AppImage (x86_64)</a>
+              <a id="download-link-linux-aarch64" href="#" class="btn btn-outline-primary" target="_blank">AppImage (aarch64)</a>
             </div>
           </div>
         </div>
@@ -252,8 +253,8 @@
         $('#version-win').text(data['desktop']);
         $('#version-linux').text(data['desktop']);
         $('#download-link-macos').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-macos-universal.dmg`);
-        $('#download-link-win').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-win-x64-setup.exe`);
-        $('#download-link-linux').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-linux-x86_64.AppImage`);
+        $('#download-link-linux-x86_64').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-linux-x86_64.AppImage`);
+        $('#download-link-linux-aarch64').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-linux-arm64.AppImage`);
       });
   </script>
   </body>
