@@ -1,7 +1,13 @@
+import { useState } from 'react'
+
+import { Button } from '@/components/ui/button'
+
 import './App.css'
 
 function App() {
-  return <div className="text-3xl font-bold underline">hello, world</div>;
+  const [clicked, setClicked] = useState(false)
+
+  return <Button onClick={() => setClicked(true)}>{clicked ? 'World' : 'Hello'}</Button>
 }
 
 export default App
