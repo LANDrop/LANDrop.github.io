@@ -255,6 +255,7 @@
         $('#version-win').text(data['desktop']);
         $('#version-linux').text(data['desktop']);
         $('#download-link-macos').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-macos-universal.dmg`);
+        $('#download-link-win').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-win-x64-setup.exe`);
         $('#download-link-linux-x86_64-appimage').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-linux-x86_64.AppImage`);
         $('#download-link-linux-aarch64-appimage').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-linux-arm64.AppImage`);
         $('#download-link-linux-x86_64-deb').attr('href', `https://releases.landrop.app/landrop-v2-electron/LANDrop-${data['desktop']}-linux-amd64.deb`);
