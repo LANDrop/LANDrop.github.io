@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
+import UAParser from 'ua-parser-js'
 
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
@@ -19,6 +20,27 @@ function Downloads() {
         setDesktopVersion(data['desktop'])
       })
   }, []);
+
+  useEffect(() => {
+    const parser = new UAParser()
+    const os = parser.getOS()
+    switch (os.name) {
+      case 'iOS':
+        setSelectedTab('ios')
+        break
+      case 'Android':
+        setSelectedTab('android')
+        break
+      case 'Mac OS':
+        setSelectedTab('macos')
+        break
+      case 'Windows':
+        setSelectedTab('windows')
+        break
+      default:
+        setSelectedTab('linux')
+    }
+  }, [])
 
   return (
     <section id="downloads" className="py-20">
