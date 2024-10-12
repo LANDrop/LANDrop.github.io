@@ -49,7 +49,7 @@ function Downloads() {
         <div className="inline-block">
           <Tabs value={selectedTab} onValueChange={setSelectedTab}>
             <TabsList className="rounded-b-none">
-              <TabsTrigger value="ios">iOS/iPadOS</TabsTrigger>
+              <TabsTrigger value="ios">iOS</TabsTrigger>
               <TabsTrigger value="android">Android/TV</TabsTrigger>
               <TabsTrigger value="macos">macOS</TabsTrigger>
               <TabsTrigger value="windows">Windows</TabsTrigger>

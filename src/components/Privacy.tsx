@@ -1,7 +1,7 @@
 function Privacy() {
   return (
     <section id="privacy" className="py-20">
-      <div className="container mx-auto">
+      <div className="container px-4 md:px-0 mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-center">Privacy Policy</h2>
         <div className="space-y-4 leading-relaxed text-gray-500 max-w-3xl mx-auto">
           <p>Thank you for using LANDrop!</p>
