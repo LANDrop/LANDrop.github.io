@@ -1,0 +1,62 @@
+{
+  "en": {
+    "translation": {
+      "features": "Features",
+      "downloads": "Downloads",
+      "faq": "FAQ",
+      "privacy": "Privacy",
+      "appSubTitle": "Drop any files to any devices on your LAN",
+      "downloadNow": "Download Now",
+      "community": "Community",
+      "donate": "Donate",
+      "crossPlatform": "Cross-Platform",
+      "crossPlatformDetails": "We mean it—iOS, Android, macOS, Windows, Linux, Android TV, and more. LANDrop works seamlessly across all major platforms.",
+      "ultraFastSecure": "Ultra-Fast & Secure",
+      "ultraFastSecureDetails": "LANDrop uses advanced protocols to deliver line-rate transfer speeds along with military-grade encryption and authentication for top-notch security.",
+      "noDataUsage": "No Data Usage",
+      "noDataUsageDetails": "On the go? No worries—LANDrop works with your personal hotspot, without using cellular data.",
+      "losslessTransfers": "Lossless Transfers",
+      "losslessTransfersDetails": "LANDrop transfers your photos and videos without any compression, ensuring they remain high quality.",
+      "nearbySharing": "Nearby Sharing",
+      "nearbySharingDetails": "LANDrop can detect nearby devices even if they're not on the same Wi-Fi network. Using WebRTC, it enables file transfers to those devices.",
+      "trustedDevices": "Trusted Devices",
+      "trustedDevicesDetails": "Add trusted devices in LANDrop and automatically accept file transfers from them without needing approval each time.",
+      "featuresDetails": "LANDrop automatically detects other devices running LANDrop on the same Wi-Fi network, so you don't need to enter IP addresses manually. Unlike other apps, there's no need to set up a server. LANDrop handles everything behind the scenes—just like AirDrop, but cross-platform.",
+      "downloadLANDrop": "Download LANDrop",
+      "androidSlashTV": "Android/TV",
+      "downloadAndroidAPK": "Download Android APK (supports TV)",
+      "appStoreBadgeUrl": "/assets/img/app-store-badge.svg",
+      "googlePlayBadgeUrl": "/assets/img/google-play-badge.svg"
+    }
+  },
+  "zh_CN": {
+    "translation": {
+      "features": "特性",
+      "downloads": "下载",
+      "faq": "常见问题",
+      "privacy": "隐私协议",
+      "appSubTitle": "跨平台局域网文件传输工具",
+      "downloadNow": "立即下载",
+      "community": "社区",
+      "donate": "捐赠",
+      "crossPlatform": "跨平台",
+      "crossPlatformDetails": "我们支持 iOS、Android、macOS、Windows、Linux、Android TV 等操作系统。LANDrop 在所有主要平台上无缝运行。",
+      "ultraFastSecure": "超高速与安全",
+      "ultraFastSecureDetails": "LANDrop 使用先进的协议，提供满速传输，并采用军用级加密和身份验证，确保一流的安全性。",
+      "noDataUsage": "不使用移动数据",
+      "noDataUsageDetails": "在外面？不用担心——LANDrop 可通过个人热点工作，无需使用移动数据。",
+      "losslessTransfers": "无损传输",
+      "losslessTransfersDetails": "LANDrop 传输您的照片和视频时不进行任何压缩，确保它们的高质量。",
+      "nearbySharing": "附近分享",
+      "nearbySharingDetails": "即使不在同一 Wi-Fi 网络上，LANDrop 也可以检测到附近的设备，并通过 WebRTC 向它们传输。",
+      "trustedDevices": "信任设备",
+      "trustedDevicesDetails": "您可以在 LANDrop 中添加信任设备，自动接受这些设备的文件传输，而无需每次都进行确认。",
+      "featuresDetails": "LANDrop 会自动检测同一 Wi-Fi 网络上的其他 LANDrop 设备，因此您无需手动输入 IP 地址。LANDrop 会在后台处理一切——就像一个跨平台的 AirDrop 一样。",
+      "downloadLANDrop": "下载 LANDrop",
+      "androidSlashTV": "安卓/电视",
+      "downloadAndroidAPK": "下载安卓APK（支持电视）",
+      "appStoreBadgeUrl": "/assets/img/app-store-badge-zh_CN.svg",
+      "googlePlayBadgeUrl": "/assets/img/google-play-badge-zh_CN.png"
+    }
+  }
+}

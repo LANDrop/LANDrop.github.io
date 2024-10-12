@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
 import NavBar from '@/components/NavBar'
 import Privacy from '@/components/Privacy'
+import '@/i18n'
 
 function App() {
   return (

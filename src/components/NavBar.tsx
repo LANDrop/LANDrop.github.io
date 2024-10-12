@@ -1,7 +1,17 @@
+import { useTranslation } from 'react-i18next'
+
 import SocialMediaBar from '@/components/SocialMediaBar'
 import { Button } from '@/components/ui/button'
 
 function NavBar() {
+  const { t } = useTranslation()
+  const navBarItems = [
+    'features',
+    'downloads',
+    'faq',
+    'privacy'
+  ]
+
   return (
     <nav className="border-b">
       <div className="container px-3 md:px-0 mx-auto flex justify-between items-center py-3">
@@ -11,10 +21,9 @@ function NavBar() {
         </div>
         <div className="flex items-center space-x-2">
           <div className="hidden md:flex items-center">
-            <Button variant="ghost" onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}>Features</Button>
-            <Button variant="ghost" onClick={() => document.getElementById('downloads')?.scrollIntoView({ behavior: 'smooth' })}>Downloads</Button>
-            <Button variant="ghost" onClick={() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' })}>FAQ</Button>
-            <Button variant="ghost" onClick={() => document.getElementById('privacy')?.scrollIntoView({ behavior: 'smooth' })}>Privacy</Button>
+            {navBarItems.map((item) => (
+              <Button variant="ghost" key={item} onClick={() => document.getElementById(item)?.scrollIntoView({ behavior: 'smooth' })}>{t(item)}</Button>
+            ))}
           </div>
           <SocialMediaBar />
         </div>
