@@ -34,7 +34,11 @@ function Downloads() {
         setSelectedTab('android')
         break
       case 'Mac OS':
-        setSelectedTab('macos')
+        if (navigator.maxTouchPoints > 1) {
+          setSelectedTab('ios')
+        } else {
+          setSelectedTab('macos')
+        }
         break
       case 'Windows':
         setSelectedTab('windows')
