@@ -64,13 +64,13 @@ function Downloads() {
             <Card className="shadow-none rounded-t-none border-t-0 p-2 pb-4">
               <TabsContent value="ios" className="flex flex-col items-center justify-center mt-0">
                 <div className="text-sm text-gray-500 mb-2">v{iosVersion}</div>
-                <a href="https://apps.apple.com/us/app/landrop/id1568444438" target="_blank">
+                <a href={t('appStoreLink')} target="_blank">
                   <img src={t('appStoreBadgeUrl')} className="h-12" />
                 </a>
               </TabsContent>
               <TabsContent value="android" className="flex flex-col items-center justify-center mt-0">
                 <div className="text-sm text-gray-500 mb-2">v{androidVersion}</div>
-                <a href="https://play.google.com/store/apps/details?id=app.landrop.landrop_flutter" target="_blank" className="mb-1">
+                <a href={t('googlePlayLink')} target="_blank" className="mb-1">
                   <img src={t('googlePlayBadgeUrl')} className="h-12" />
                 </a>
                 <a href="https://releases.landrop.app/landrop-v2-flutter/LANDrop-flutter-latest-android.apk" target="_blank" className="text-gray-500 underline text-xs">{t('downloadAndroidAPK')}</a>
