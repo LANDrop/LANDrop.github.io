@@ -1,7 +1,9 @@
+import i18next from 'i18next'
 import { useTranslation } from 'react-i18next'
 
 import SocialMediaBar from '@/components/SocialMediaBar'
 import { Button } from '@/components/ui/button'
+import { Translate } from '@mui/icons-material'
 
 function NavBar() {
   const { t } = useTranslation()
@@ -26,6 +28,16 @@ function NavBar() {
             ))}
           </div>
           <SocialMediaBar />
+          <Button size="icon" variant="ghost" className="w-8 h-8" onClick={() => {
+            const currentLang = i18next.language
+            if (currentLang.startsWith('en')) {
+              i18next.changeLanguage('zh-CN')
+            } else {
+              i18next.changeLanguage('en-US')
+            }
+          }}>
+            <Translate className="scale-75" />
+          </Button>
         </div>
       </div>
     </nav>
