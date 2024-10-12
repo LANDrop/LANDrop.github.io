@@ -26,7 +26,9 @@
       "androidSlashTV": "Android/TV",
       "downloadAndroidAPK": "Download Android APK (supports TV)",
       "appStoreBadgeUrl": "/assets/img/app-store-badge.svg",
-      "googlePlayBadgeUrl": "/assets/img/google-play-badge.svg"
+      "googlePlayBadgeUrl": "/assets/img/google-play-badge.svg",
+      "privacyPolicy": "Privacy Policy",
+      "privacyPolicyDetails": "<p>Thank you for using LANDrop!</p><p>SkyArc LLC is committed to protecting your privacy. This Privacy Policy outlines how we handle your personal data.</p><p><b>Data Storage and Usage:</b></p><ul class=\"list-disc pl-6\"><li>We do not collect, share, or store any of your personal data.</li><li>All personal data required for the normal operation of the app are stored entirely and exclusively on your device.</li></ul><p><b>File Transfers:</b></p><ul class=\"list-disc pl-6\"><li>When you send or receive files to or from other devices, your device's name, type, and/or local IP address may be shared with the other party.</li><li>You can choose not to actively share this information by turning off \"Discoverable\" in the app.</li><li>This information is not collected, shared, or stored by SkyArc LLC in any way and is only used for the necessary operation of the app.</li></ul><p><b>Analytics and Usage Data:</b></p><ul class=\"list-disc pl-6\"><li>To better serve our customers, we may gather analytics and usage data. This data helps us understand how our app is used and improve its performance and functionality.</li><li>The analytics and usage data collected will be anonymized and will not include any personal data.</li></ul><p>If you have any questions regarding this privacy policy, please send an email to privacy@landrop.app.</p><p>Thank you for your trust in LANDrop!</p><p>SkyArc LLC</p>"
     }
   },
   "zh_CN": {
@@ -56,7 +58,9 @@
       "androidSlashTV": "安卓/电视",
       "downloadAndroidAPK": "下载安卓APK（支持电视）",
       "appStoreBadgeUrl": "/assets/img/app-store-badge-zh_CN.svg",
-      "googlePlayBadgeUrl": "/assets/img/google-play-badge-zh_CN.png"
+      "googlePlayBadgeUrl": "/assets/img/google-play-badge-zh_CN.png",
+      "privacyPolicy": "隐私协议",
+      "privacyPolicyDetails": "<p>感谢您使用 LANDrop！</p><p>SkyArc LLC 致力于保护您的隐私。本隐私政策概述了我们如何处理您的个人数据。</p><p><b>数据存储和使用：</b></p><ul class=\"list-disc pl-6\"><li>我们不收集、共享或存储您的任何个人数据。</li><li>应用程序正常运行所需的所有个人数据完全且仅存储在您的设备上。</li></ul><p><b>文件传输：</b></p><ul class=\"list-disc pl-6\"><li>当您向其他设备发送或接收文件时，您的设备名称、类型和/或本地 IP 地址可能会与对方共享。</li><li>您可以通过关闭应用程序中的“可被发现”选项来选择不主动共享此信息。</li><li>这些信息不会以任何方式被 SkyArc LLC 收集、共享或存储，仅用于应用程序的必要操作。</li></ul><p><b>分析和使用数据：</b></p><ul class=\"list-disc pl-6\"><li>为了更好地服务我们的客户，我们可能会收集分析和使用数据。这些数据有助于我们了解应用程序的使用情况，并改进其性能和功能。</li><li>收集的分析和使用数据将被匿名化，不会包含任何个人数据。</li></ul><p>如果您对本隐私政策有任何疑问，请发送电子邮件至 privacy@landrop.app。</p><p>感谢您对 LANDrop 的信任！</p><p>SkyArc LLC</p>"
     }
   }
 }
