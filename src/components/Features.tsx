@@ -1,4 +1,4 @@
-import { Bolt, Devices, Image, WifiTetheringOff } from '@mui/icons-material'
+import { Bolt, Devices, Image, TapAndPlay, VerifiedUser, WifiTetheringOff } from '@mui/icons-material'
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
@@ -45,18 +45,18 @@ function Features() {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle className="flex items-center">Placeholder</CardTitle>
+              <CardTitle className="flex items-center"><TapAndPlay className="mr-2 h-4 w-4" /> Nearby Share</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Placeholder</p>
+              <p>LANDrop can also detect nearby phones even if they are not in the same Wi-Fi network. LANDrop will utilize WebRTC to send files to these devices.</p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle className="flex items-center">Placeholder</CardTitle>
+              <CardTitle className="flex items-center"><VerifiedUser className="mr-2 h-4 w-4" /> Trusted Devices</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Placeholder</p>
+              <p>LANDrop allows you to add trusted devices. You will automatically accept file requests from these devices without being prompted.</p>
             </CardContent>
           </Card>
         </div>
